@@ -1,31 +1,42 @@
-# Emby自定义JavaScript及Css
+---
 
-[English](README_EN.md)
-- **注意XSS风险，出现任何问题后果自负**
-- **此插件基于 mediabrowser.server.core 4.8.0.24-beta**
-- [使用说明](src/README.md)
-- 脚本（粘贴代码到自定义JavaScript或Css）
-  - [Telegram频道](https://t.me/embycustomcssjs)
-  - 弹幕相关插件暂时无法通过JavaScript及Css添加
+## 🎨 Emby Custom JavaScript & CSS Plugin
 
-- 管理员页面：
-  - 为所有用户提供脚本，用户可以选择使用（强制开启的强制使用）
+This plugin allows you to inject custom JavaScript and CSS into the Emby web interface for both admins and users.
 
-  ![photo_2023-05-14_21-45-18](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/b3890993-e5e7-497f-915c-8df75c53f64a)
-  
+- **⚠️ Use at your own risk — XSS vulnerabilities may occur.**
+- **Built on**: `mediabrowser.server.core 4.8.0.24-beta`
+- **Docs**: [Usage Guide](https://github.com/Shurelol/Emby.CustomCssJS/blob/main/src/README.md)
+- **Community**: [Telegram Channel](https://t.me/embycustomcssjs)
+- **Note**: Danmaku (bullet comment) plugins are currently not supported via JS/CSS.
 
-- 用户页面：
-  - 管理员提供的脚本可以选择使用
-  - 用户可自行添加脚本（储存在localStorage）
-  
-  ![photo_2023-05-14_21-45-22](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/25309616-bfa1-464c-94a8-e29e500d5278)
+---
 
-- 控制台中可查看脚本加载情况
+### 🛠️ Admin Panel
+- Admins can provide scripts to all users.
+- Users can choose to enable them.
+- Admins can also force-enable scripts globally.
 
-  ![image](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/7874ebc0-806a-4d08-b3f3-d4b46809c5d7)
-  
-- 编辑界面提供代码编辑器
+![Admin Panel Screenshot](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/b3890993-e5e7-497f-915c-8df75c53f64a)
 
-  ![image](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/b6e486f9-7a08-428d-b8e4-4660d98685d7)
-  
-  ![image](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/868d176d-366a-4f8f-b2cd-7571fe1f9b86)
+---
+
+### 👤 User Panel
+- Users can opt-in to admin-provided scripts.
+- Users can also add their own scripts (stored in `localStorage`).
+
+![User Panel Screenshot](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/25309616-bfa1-464c-94a8-e29e500d5278)
+
+---
+
+### 🧪 Debugging & Editing
+- Script loading status is visible in the browser console.
+
+![Console Log](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/7874ebc0-806a-4d08-b3f3-d4b46809c5d7)
+
+- Built-in code editor for writing and editing scripts.
+
+![Editor Screenshot](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/b6e486f9-7a08-428d-b8e4-4660d98685d7)  
+![Editor Screenshot 2](https://github.com/Shurelol/Emby.CustomCssJS/assets/16237201/868d176d-366a-4f8f-b2cd-7571fe1f9b86)
+
+---
